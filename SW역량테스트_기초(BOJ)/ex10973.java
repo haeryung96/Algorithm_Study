@@ -8,7 +8,7 @@ import java.util.*;
 **/
 
 /** 
- * 다음 순열의 반대로 구현하면 됨
+ * 다음 순열의 반대로 구현하면 
  * **/
 
 public class ex10973 {
