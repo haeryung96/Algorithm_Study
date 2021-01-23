@@ -1,9 +1,15 @@
 # Algorithm_Study
 
-● 알고리즘 사이트 
+알고리즘 사이트 
+-
 
-BaekJoon
++ BaekJoon
 
-Programmers
+* Programmers
 
-Code-Up
+- Code-Up
+
+사용 언어
+-
+
++ Java
