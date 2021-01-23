@@ -8,7 +8,7 @@ import java.util.*;
 
 public class ex10972 {
 	public static boolean next_permutation(int[] a) {
-		int i = a.length-1; // 배열의 크기를 a라고 하면 i는 0부터 시작이므로 크기에서 1을 빼줌
+		int i = a.length-1; // 배열의 크기를 a라고 하면 i를 끝(오른쪽)부터 검사
 		
 		//1번 과정 
 		// i가 0보다 크고 배열 a에 들어있는 i-1이 i보다 큰 경우 오름차순이 아닌 경우 i의 값을 감소 
