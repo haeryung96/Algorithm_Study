@@ -8,6 +8,7 @@ import java.util.*;
 
 /**
  * 순열로 푸는 이유는 정수의 순서를 적절히 바꿔서 즉, 순서를 중요시하기 때문
+ * 테스트 개수가 1~10까지만 Brute Force로 풀 수 있음
  * **/
 
 public class ex10819 {
