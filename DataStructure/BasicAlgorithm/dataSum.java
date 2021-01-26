@@ -1,7 +1,7 @@
 import java.util.*;
 
 /**
- * 1+ 2+ 3+ ... + n = sum을 출력하는 프로그램을 작성해라
+ * 1+ 2+ 3+ ... + n = sum을 출력하는 프로그램을 작성해라.
  * **/
 
 public class dataSum {
