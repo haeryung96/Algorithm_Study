@@ -7,7 +7,6 @@
 
 * Programmers
 
-- Code-Up
 
 책
 -
