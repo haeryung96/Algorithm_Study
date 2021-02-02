@@ -10,7 +10,7 @@ import java.util.*;
  * 입력된 값을 stack에 넣음
  * 계속 넣다가 stack에 1이 들어가는 순간 pop하고 cnt 증가
  * 스택이 비어지는 순간 -> nice 나머지 -> sad
- * **/
+ **/
 
 public class ex12789 {
 	
