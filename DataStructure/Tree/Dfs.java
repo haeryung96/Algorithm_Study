@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class ex1260 {
+public class Dfs {
 	static int[][] adjArray ; // 인접 행렬로 구현
 	static boolean visited[]; // 방문 여부 검사 위해
 	
