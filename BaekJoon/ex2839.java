@@ -8,7 +8,7 @@ import java.io.*;
  * 3. 5로 나눠지지 않는 경우 3을 빼주면서 3의 배수를 검사
  */
 
-public class ex10799 {
+public class ex2839 {
 
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
