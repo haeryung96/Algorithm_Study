@@ -21,6 +21,7 @@ public class Solution_구명보트 {
         Arrays.sort(people);
         
         for(int i = right; left <= i; i--){
+		
             // 두 명의 몸무게가 리미트보다 크면 한 사람만 보트에 태워 보내기
             if(people[i] + people[left] > limit){
                 answer++;
