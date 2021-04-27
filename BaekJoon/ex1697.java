@@ -43,6 +43,12 @@ public class ex1697 {
 					return; // 반복문 밖을 나가는 것이 아니라 호출된 함수의 밖으로 나감 
 				}
 				
+				if (next >= 0 && next < visited.length && visited[next] == 0) { //나는 이제 부모노드가 되어야 한다 
+					//옮겨진 좌표가 좌표값 안에 있고, 방문한 적이 없는 좌표라면 
+					q.add(next);//해당 좌표를 부모노드로 삼고 탐색 시작
+					visited[next] = visited[tmp] + 1;//부모노드가 된 곳의 체크배열은 이전 부모노드값의 +1
+				}
+				
 			}
 		}
 	}
