@@ -14,7 +14,7 @@ import java.util.StringTokenizer;
  * 5. 위의 경우들을 제외하고서는 모두 최대 일수 출력
  */
 
-public class ex7569 {
+public class ex7576 {
 	public static int N; // 상자의 가로 칸의 수 
 	public static int M; // 상자의 세로 칸의 수 
 	public static int[] dx = {1, -1, 0, 0}; // 상하좌우
