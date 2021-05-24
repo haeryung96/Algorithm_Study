@@ -1,5 +1,3 @@
-package baekjoon;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -84,36 +82,50 @@ public class ex2468 {
       max_cnt = 0;
       
       // BFS 탐색
-      for(int i=0; i < N; i++) {
-         for(int j=0; j < N; j++) {
-        	
-        	for(int k = 0; k <= maxH; k++) {
-        		if(map[i][j] <= k) { // 잠긴 도시
-                    flood[i][j] = 0;
-                }
-                  
-                 else if (map[i][j] > N) { // 안잠긴 도시 
-                    flood[i][j] = 1;
-                }
-        		
-        		if(flood[i][j] == 1 && visited[i][j] == false) {
-                    BFS(i,j);
-                    cnt++;
-                 } 
-        	}
-        	
-        	for(boolean a[]:visited) {
-        		Arrays.fill(a, false); // 방문 배열 다시 초기화 
-        	}
-        	
-        	for(int b[]: flood) {
-            	Arrays.fill(b, 0); // 초기화 
-        	}
-        	max_cnt = Math.max(cnt, max_cnt);
-         }
+      for(int k=0; k <= maxH; k++) {
+    	
+    	   cnt = 0;
+    	
+    	   for(boolean a[]:visited) {
+      		Arrays.fill(a, false); // 방문 배열 다시 초기화 
+      	}
+    	
+    	   for(int b[]:flood) {
+    		   Arrays.fill(b, 0);
+    	   }
+    	
+    	   for(int i=0; i < N; i++) {
+    		   for(int j=0; j < N; j++) {
+    			
+    			   if(map[i][j] > k) { // 안잠긴 도시 
+    				   flood[i][j] = 1;
+    			   }
+    			
+    			   else if(map[i][j] <= k) {
+    				   flood[i][j] = 0;
+    			   }
+    		   } 
+    	   }
+    	
+    	   //BFS 탐색
+    	   for(int i=0; i < N; i++) {
+    		   for(int j=0; j < N; j++) {
+    			   
+    			   if(flood[i][j] == 1 && visited[i][j] == false) {
+    				   BFS(i,j);
+    				   cnt++;
+    			   }
+    		   } 
+    	   }
+    	
+    	   max_cnt = Math.max(cnt, max_cnt);
       }
       
       System.out.println(max_cnt);
+        	
    }
 
 }
+      
+   
+
