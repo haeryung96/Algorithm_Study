@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class boj3896 {
+public class ex3896 {
     static boolean prime[] = new boolean[1299709]; // 소수인지 아닌지
     static int N;
 
